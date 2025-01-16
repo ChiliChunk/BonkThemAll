@@ -14,6 +14,9 @@ export default function Index() {
   const {data, isFetching} = useFetchQuery("/monsters")
   const monsters = data ?? []
   const [search, setSearch] = useState('')
+  const filteredMonsters =  search ? monsters.filter(monster => monster.name.toLowerCase().includes(search.toLowerCase())) : monsters;
+  filteredMonsters.sort((a, b) => a.name.localeCompare(b.name))
+  
   return (
     <SafeAreaView
       style={[styles.container, { backgroundColor: colors.tint }]}
@@ -28,7 +31,7 @@ export default function Index() {
       </View>
       <Card style={styles.body}>
         <FlatList 
-          data={monsters} 
+          data={filteredMonsters} 
           numColumns={3}
           columnWrapperStyle={styles.gridGap}
           contentContainerStyle={[styles.gridGap, styles.list]}
