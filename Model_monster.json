@@ -1,0 +1,53 @@
+{
+    "_id": {
+        "$oid": "6788f027ba83eda5e648cf00"
+    },
+    "name": "pukei-pukei",
+    "icon": "https://cdn.kiranico.net/file/kiranico/mhworld-web/mhw/icon/em102_ID.png",
+    "general_element_weaknesses": [
+        {
+            "element": "fire",
+            "magnitude": 2
+        },
+        {
+            "element": "ice",
+            "magnitude": 2
+        },
+        {
+            "element": "thunder",
+            "magnitude": 3
+        }
+    ],
+    "general_element_resistances": [
+        {
+            "element": "water",
+            "magnitude": 4
+        }
+    ],
+    "general_alterations": [
+        {
+            "alterations": "poison",
+            "magnitude": 1
+        },
+        {
+            "alterations": "sleep",
+            "magnitude": 3
+        },
+        {
+            "alterations": "paralysis",
+            "magnitude": 3
+        },
+        {
+            "alterations": "explosion",
+            "magnitude": 2
+        },
+        {
+            "alterations": "stun",
+            "magnitude": 2
+        }
+    ],
+    "breakable_parts": [
+        "head",
+        "tail"
+    ]
+}
