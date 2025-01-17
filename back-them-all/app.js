@@ -18,15 +18,14 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/monster/:name', async (req, res) => {
+app.get('/monster/:id', async (req, res) => {
     console.log(req.params.name);
-    const result = await Monsters.findOne({ name: req.params.name });
-    console.log(result);
+    const result = await Monsters.findOne({ _id: req.params.id });
     res.send(result.toJSON());
 })
 
 app.get('/monsters', async (req, res) => {
-    const result = await Monsters.find();
+    const result = await Monsters.find().select("name icon");;
     res.send(result);
 })
 

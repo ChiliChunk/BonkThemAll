@@ -11,5 +11,5 @@ const monsterSchema = new Schema({
     breakable_parts: [String]
 });
 
-const Monsters = mongoose.model('Monsters', monsterSchema);
-module.exports = Monsters;
+const Monster = mongoose.model('Monster', monsterSchema);
+module.exports = Monster;

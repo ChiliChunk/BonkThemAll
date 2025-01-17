@@ -1,18 +1,20 @@
 export const Colors = {
     light: {
-        tint: '#fff',
+        darkerGrey : '#202124',
+        darkGrey: '#303136',
         lightGrey: '#4d5061',
-        darkGrey: '#30323d',
+        lighterGrey: '#66697f',
         saffron : '#e8c547',
         blue: '#5c80bc',
         ashGrey: '#cdd1c4',
-        textDefault:"#000"
+        textDefault:"#fff"
     },
 
     dark:{
-        tint : '#121212',
-        lightGrey: '#4d5061',
-        darkGrey: '#212121',
+        darkerGrey : '#141414',
+        darkGrey: '#1c1c1c',
+        lightGrey: '#383838',
+        lighterGrey: '#444444',
         saffron : '#e8c547',
         blue: '#5c80bc',
         ashGrey: '#cdd1c4',
