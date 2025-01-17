@@ -5,9 +5,9 @@ type Props = ViewProps & {}
 
 export function Card({style, ...rest}: Props) {
     const colors = useThemeColors()
-    return <View style = {[style , styles]} {...rest} />
+    return <View style = {[style ,styles ,{backgroundColor: colors.darkGrey }]} {...rest} />
 }
 
 const styles = {
-    borderRadius: 8
+    borderRadius: 8,
 } satisfies ViewStyle
